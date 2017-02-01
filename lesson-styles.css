@@ -1,0 +1,25 @@
+/* Style Resets */
+
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.grid-item {
+  width: 100%/4 -4rem;
+  float: left;
+  margin: 2rem;
+}
+
+.row {
+  overflow: auto;
+}
