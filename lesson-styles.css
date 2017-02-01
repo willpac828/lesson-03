@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 ul {
@@ -14,12 +15,54 @@ ul {
   box-sizing: border-box;
 }
 
-.grid-item {
-  width: 100%/4 -4rem;
-  float: left;
-  margin: 2rem;
+img {
+  max-width: 100%;
+}
+
+/* Grid and General Layout*/
+
+.section {
+  background: #ddfca3;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 65rem;
+
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .row {
+  /* Makes sure the first and last items line up with window */
+
+  margin: -2rem; /* That we included in .grid-item */
   overflow: auto;
+}
+
+.grid-item {
+  width: calc(100% / 4 - 4rem);
+  min-width: 8rem;
+  float: left;
+  margin: 2rem;
+
+}
+
+/*
+profile
+ */
+.profile {
+
+  margin: 0;
+}
+
+.profile__username {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/*prompt*/
+
+.prompt {
+  text-align: center;
 }
